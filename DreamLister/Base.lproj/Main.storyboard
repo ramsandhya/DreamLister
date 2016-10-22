@@ -33,11 +33,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SfE-CY-ZyQ">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="MAv-od-QST">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="MAv-od-QST" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MAv-od-QST" id="k2s-Dl-rXA">
-                                            <frame key="frameInset" width="343" height="149"/>
+                                            <frame key="frameInset" width="343" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IcL-AX-9Qh">
@@ -99,6 +99,12 @@
                                                 <constraint firstItem="IcL-AX-9Qh" firstAttribute="top" secondItem="k2s-Dl-rXA" secondAttribute="topMargin" id="fJF-cp-IfI"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="details" destination="0op-GK-KMb" id="nVE-sm-vJ3"/>
+                                            <outlet property="price" destination="o5p-iP-c9f" id="gyI-ja-y3b"/>
+                                            <outlet property="thumb" destination="E6p-uW-ARq" id="Ohe-EQ-AOX"/>
+                                            <outlet property="title" destination="vO9-ci-txc" id="vtj-g8-hw7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -119,6 +125,10 @@
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segment" destination="UcV-QX-DkL" id="lC4-3C-QFQ"/>
+                        <outlet property="tableView" destination="SfE-CY-ZyQ" id="zyU-AU-lvZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,7 +139,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JwW-gT-WUh" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="okP-4N-8nd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="okP-4N-8nd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

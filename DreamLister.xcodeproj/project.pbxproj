@@ -22,6 +22,7 @@
 		F542B15D1DBB148B0069DA65 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F542B1551DBB148B0069DA65 /* Item+CoreDataClass.swift */; };
 		F542B15E1DBB148B0069DA65 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F542B1561DBB148B0069DA65 /* Item+CoreDataProperties.swift */; };
 		F542B1631DBC00C20069DA65 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F542B1621DBC00C20069DA65 /* MaterialView.swift */; };
+		F542B1651DBC1DB70069DA65 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F542B1641DBC1DB70069DA65 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F542B1551DBB148B0069DA65 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F542B1561DBB148B0069DA65 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F542B1621DBC00C20069DA65 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		F542B1641DBC1DB70069DA65 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				F542B1621DBC00C20069DA65 /* MaterialView.swift */,
+				F542B1641DBC1DB70069DA65 /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F542B1651DBC1DB70069DA65 /* ItemCell.swift in Sources */,
 				F542B15D1DBB148B0069DA65 /* Item+CoreDataClass.swift in Sources */,
 				F542B15C1DBB148B0069DA65 /* Image+CoreDataProperties.swift in Sources */,
 				F542B1571DBB148B0069DA65 /* ItemType+CoreDataClass.swift in Sources */,
