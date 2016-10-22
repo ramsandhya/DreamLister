@@ -21,6 +21,7 @@
 		F542B15C1DBB148B0069DA65 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F542B1541DBB148B0069DA65 /* Image+CoreDataProperties.swift */; };
 		F542B15D1DBB148B0069DA65 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F542B1551DBB148B0069DA65 /* Item+CoreDataClass.swift */; };
 		F542B15E1DBB148B0069DA65 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F542B1561DBB148B0069DA65 /* Item+CoreDataProperties.swift */; };
+		F542B1631DBC00C20069DA65 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F542B1621DBC00C20069DA65 /* MaterialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F542B1541DBB148B0069DA65 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F542B1551DBB148B0069DA65 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F542B1561DBB148B0069DA65 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F542B1621DBC00C20069DA65 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		F542B1391DBAFAD90069DA65 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				F542B1611DBC006B0069DA65 /* View */,
 				F542B15F1DBB15A60069DA65 /* Model */,
 				F542B13A1DBAFAD90069DA65 /* AppDelegate.swift */,
 				F542B13C1DBAFAD90069DA65 /* MainVC.swift */,
@@ -105,6 +108,14 @@
 				F542B1501DBB148B0069DA65 /* ItemType+CoreDataProperties.swift */,
 			);
 			name = Generated;
+			sourceTree = "<group>";
+		};
+		F542B1611DBC006B0069DA65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F542B1621DBC00C20069DA65 /* MaterialView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 				F542B15D1DBB148B0069DA65 /* Item+CoreDataClass.swift in Sources */,
 				F542B15C1DBB148B0069DA65 /* Image+CoreDataProperties.swift in Sources */,
 				F542B1571DBB148B0069DA65 /* ItemType+CoreDataClass.swift in Sources */,
+				F542B1631DBC00C20069DA65 /* MaterialView.swift in Sources */,
 				F542B1591DBB148B0069DA65 /* Store+CoreDataClass.swift in Sources */,
 				F542B1581DBB148B0069DA65 /* ItemType+CoreDataProperties.swift in Sources */,
 				F542B15B1DBB148B0069DA65 /* Image+CoreDataClass.swift in Sources */,

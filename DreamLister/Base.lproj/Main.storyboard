@@ -42,7 +42,7 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IcL-AX-9Qh">
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E6p-uW-ARq">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tesla" translatesAutoresizingMaskIntoConstraints="NO" id="E6p-uW-ARq">
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="100" id="ImK-HM-dNh"/>
                                                                 <constraint firstAttribute="width" constant="100" id="NQf-sz-CKE"/>
@@ -52,8 +52,8 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="9vT-Jf-tDC"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$80,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5p-iP-c9f">
@@ -61,12 +61,12 @@
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="lhb-0e-Cbc"/>
                                                                 <constraint firstAttribute="height" constant="21" id="uxN-Br-oLg"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$80,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYI-wK-8Eq">
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Someday I will own this car. Going for a knock out." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0op-GK-KMb">
+                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -75,20 +75,23 @@
                                                     <constraints>
                                                         <constraint firstItem="o5p-iP-c9f" firstAttribute="leading" secondItem="E6p-uW-ARq" secondAttribute="trailing" constant="8" id="1bt-SD-ZiG"/>
                                                         <constraint firstItem="E6p-uW-ARq" firstAttribute="leading" secondItem="IcL-AX-9Qh" secondAttribute="leading" constant="8" id="3eK-uy-MLV"/>
-                                                        <constraint firstAttribute="bottom" secondItem="fYI-wK-8Eq" secondAttribute="bottom" constant="8" id="LWb-p5-O1a"/>
+                                                        <constraint firstItem="0op-GK-KMb" firstAttribute="leading" secondItem="E6p-uW-ARq" secondAttribute="trailing" constant="8" id="53C-Ge-P3e"/>
+                                                        <constraint firstItem="0op-GK-KMb" firstAttribute="top" secondItem="o5p-iP-c9f" secondAttribute="bottom" constant="8" id="NKB-dY-vKu"/>
+                                                        <constraint firstAttribute="trailing" secondItem="0op-GK-KMb" secondAttribute="trailing" constant="8" id="XI4-Lp-kaJ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="0op-GK-KMb" secondAttribute="bottom" constant="8" id="ZCD-5D-AJL"/>
                                                         <constraint firstItem="vO9-ci-txc" firstAttribute="leading" secondItem="E6p-uW-ARq" secondAttribute="trailing" constant="8" id="Zzc-xD-cg7"/>
                                                         <constraint firstItem="E6p-uW-ARq" firstAttribute="centerY" secondItem="IcL-AX-9Qh" secondAttribute="centerY" id="bJv-az-ERS"/>
                                                         <constraint firstAttribute="trailing" secondItem="vO9-ci-txc" secondAttribute="trailing" constant="8" id="dkg-Hh-oCf"/>
                                                         <constraint firstAttribute="trailing" secondItem="o5p-iP-c9f" secondAttribute="trailing" constant="8" id="gV0-c1-dSw"/>
-                                                        <constraint firstItem="fYI-wK-8Eq" firstAttribute="leading" secondItem="E6p-uW-ARq" secondAttribute="trailing" constant="8" id="gse-oi-aYK"/>
                                                         <constraint firstItem="vO9-ci-txc" firstAttribute="top" secondItem="IcL-AX-9Qh" secondAttribute="top" constant="8" id="qoF-Pk-qNw"/>
-                                                        <constraint firstAttribute="trailing" secondItem="fYI-wK-8Eq" secondAttribute="trailing" constant="8" id="tdU-CV-Bfa"/>
                                                         <constraint firstItem="o5p-iP-c9f" firstAttribute="top" secondItem="vO9-ci-txc" secondAttribute="bottom" constant="8" id="z5z-7B-Hhw"/>
-                                                        <constraint firstItem="fYI-wK-8Eq" firstAttribute="top" secondItem="o5p-iP-c9f" secondAttribute="bottom" constant="8" id="znr-Pf-jQW"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.044332093060000001" green="0.61084086770000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="IcL-AX-9Qh" firstAttribute="trailing" secondItem="k2s-Dl-rXA" secondAttribute="trailingMargin" id="Ek9-en-YyB"/>
                                                 <constraint firstItem="IcL-AX-9Qh" firstAttribute="leading" secondItem="k2s-Dl-rXA" secondAttribute="leadingMargin" id="GYu-Yt-T3S"/>
@@ -144,4 +147,7 @@
             <point key="canvasLocation" x="119" y="163"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tesla" width="800" height="489"/>
+    </resources>
 </document>
