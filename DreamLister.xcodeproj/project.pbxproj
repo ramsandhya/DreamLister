@@ -72,14 +72,7 @@
 		F542B1391DBAFAD90069DA65 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
-				F542B14F1DBB148B0069DA65 /* ItemType+CoreDataClass.swift */,
-				F542B1501DBB148B0069DA65 /* ItemType+CoreDataProperties.swift */,
-				F542B1511DBB148B0069DA65 /* Store+CoreDataClass.swift */,
-				F542B1521DBB148B0069DA65 /* Store+CoreDataProperties.swift */,
-				F542B1531DBB148B0069DA65 /* Image+CoreDataClass.swift */,
-				F542B1541DBB148B0069DA65 /* Image+CoreDataProperties.swift */,
-				F542B1551DBB148B0069DA65 /* Item+CoreDataClass.swift */,
-				F542B1561DBB148B0069DA65 /* Item+CoreDataProperties.swift */,
+				F542B15F1DBB15A60069DA65 /* Model */,
 				F542B13A1DBAFAD90069DA65 /* AppDelegate.swift */,
 				F542B13C1DBAFAD90069DA65 /* ViewController.swift */,
 				F542B13E1DBAFAD90069DA65 /* Main.storyboard */,
@@ -89,6 +82,29 @@
 				F542B1411DBAFAD90069DA65 /* DreamLister.xcdatamodeld */,
 			);
 			path = DreamLister;
+			sourceTree = "<group>";
+		};
+		F542B15F1DBB15A60069DA65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F542B1551DBB148B0069DA65 /* Item+CoreDataClass.swift */,
+				F542B1531DBB148B0069DA65 /* Image+CoreDataClass.swift */,
+				F542B1511DBB148B0069DA65 /* Store+CoreDataClass.swift */,
+				F542B14F1DBB148B0069DA65 /* ItemType+CoreDataClass.swift */,
+				F542B1601DBB15C30069DA65 /* Generated */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F542B1601DBB15C30069DA65 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				F542B1561DBB148B0069DA65 /* Item+CoreDataProperties.swift */,
+				F542B1541DBB148B0069DA65 /* Image+CoreDataProperties.swift */,
+				F542B1521DBB148B0069DA65 /* Store+CoreDataProperties.swift */,
+				F542B1501DBB148B0069DA65 /* ItemType+CoreDataProperties.swift */,
+			);
+			name = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
