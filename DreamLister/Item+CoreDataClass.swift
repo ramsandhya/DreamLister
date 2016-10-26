@@ -12,8 +12,11 @@ import CoreData
 
 public class Item: NSManagedObject {
     
+    // Whenever the "Item" entity is created and inserted into the "Managed Object Context". This function will be called then.
     public override func awakeFromInsert() {
         
+        // This is calling the superclass's "awake" method.
+        // Next line is assigning the timestamp to the "created" property of "Item"  entity.
         super.awakeFromInsert()
         self.created = NSDate()
     }
