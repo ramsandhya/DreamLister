@@ -22,6 +22,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.dataSource = self
         tableView.delegate = self
         
+        generateTestData()
+        attemptFetch()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -68,6 +70,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest , managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         
+        self.controller = controller
+        
         do {
             try controller.performFetch()
             
@@ -102,7 +106,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         case.update:
             if let indexPath = indexPath {
                 let cell = tableView.cellForRow(at: indexPath) as! ItemCell
-                configureCell(cell: cell, indexPath: <#T##IndexPath#>)
+                configureCell(cell: cell, indexPath: indexPath)
             }
             break
         case.move:
@@ -115,6 +119,25 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
             break
             
         }
+    }
+    
+     func generateTestData() {
+        let item = Item(context: context)
+        item.title = "MacBook Pro"
+        item.price = 1800
+        item.details = "I can't wait until the September event, I hope they release new MPBs.  "
+        
+        let item2 = Item(context: context)
+        item2.title = "Bose headphones"
+        item2.price = 300
+        item2.details = "But Man, its so nice to be able to block out everyone with the noise cancelling tech."
+        
+        let item3 = Item(context: context)
+        item3.title = "Tesla Model S"
+        item3.price = 110000
+        item3.details = "Oh man this is a beautiful car. And one day, I will own it."
+        
+        ad.saveContext()
     }
     
 }
