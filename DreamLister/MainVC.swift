@@ -27,14 +27,19 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
-        configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
+        configureCell(cell: cell, indexPath: indexPath)
         
-        return cell ()
+        return cell
         
     }
     
-    func configureCell(cell: ItemCell, indexPath: NSIndexPath) {
+    func configureCell(cell: ItemCell, indexPath: IndexPath) {
         
+        let item = controller.object(at: indexPath)
+        //Step 1 based on index find which item to display on cell
+        // find the item from Core Data
+        //Step 2 pass the item to cell's configureCell function
+        cell.configureCell(item: item)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -50,6 +55,10 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
             return sectionInfo.numberOfObjects
         }
         return 0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
     
     func attemptFetch() {
