@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F5062F121DCBF6DD0044C720 /*  .swift in Sources */ = {isa = PBXBuildFile; fileRef = F5062F111DCBF6DD0044C720 /*  .swift */; };
+		F5062F121DCBF6DD0044C720 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5062F111DCBF6DD0044C720 /* ItemDetailsVC.swift */; };
 		F5062F141DCBFFF30044C720 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5062F131DCBFFF30044C720 /* CustomTextField.swift */; };
 		F542B13B1DBAFAD90069DA65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F542B13A1DBAFAD90069DA65 /* AppDelegate.swift */; };
 		F542B13D1DBAFAD90069DA65 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F542B13C1DBAFAD90069DA65 /* MainVC.swift */; };
@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F5062F111DCBF6DD0044C720 /*  .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " .swift"; sourceTree = "<group>"; };
+		F5062F111DCBF6DD0044C720 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 		F5062F131DCBFFF30044C720 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		F542B1371DBAFAD90069DA65 /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F542B13A1DBAFAD90069DA65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				F542B13C1DBAFAD90069DA65 /* MainVC.swift */,
-				F5062F111DCBF6DD0044C720 /*  .swift */,
+				F5062F111DCBF6DD0044C720 /* ItemDetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -215,7 +215,7 @@
 				F542B1591DBB148B0069DA65 /* Store+CoreDataClass.swift in Sources */,
 				F542B1581DBB148B0069DA65 /* ItemType+CoreDataProperties.swift in Sources */,
 				F542B15B1DBB148B0069DA65 /* Image+CoreDataClass.swift in Sources */,
-				F5062F121DCBF6DD0044C720 /*  .swift in Sources */,
+				F5062F121DCBF6DD0044C720 /* ItemDetailsVC.swift in Sources */,
 				F542B13D1DBAFAD90069DA65 /* MainVC.swift in Sources */,
 				F542B15A1DBB148B0069DA65 /* Store+CoreDataProperties.swift in Sources */,
 				F542B13B1DBAFAD90069DA65 /* AppDelegate.swift in Sources */,
