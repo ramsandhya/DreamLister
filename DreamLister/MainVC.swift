@@ -72,6 +72,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         self.controller = controller
         
+        controller.delegate = self
+        
         do {
             try controller.performFetch()
             
