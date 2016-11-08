@@ -31,7 +31,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         
         storePicker.delegate = self
         storePicker.dataSource = self
-        /*
+        
         let store = Store(context: context)
         store.name = "Best Buy"
         let store1 = Store(context: context)
@@ -45,7 +45,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         let store5 = Store(context: context)
         store5.name = "K Mart"
         
-        ad.saveContext()*/ 
+        ad.saveContext() 
         getStores()
     }
     
