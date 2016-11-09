@@ -20,6 +20,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     @IBOutlet weak var detailsFIled: CustomTextField!
     
     var stores = [Store]()
+    var itemToEdit: Item?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,10 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         
         ad.saveContext() 
         getStores()
+        
+        if itemToEdit != nil {
+            loadItemData()
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -92,6 +97,27 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         item.toStore = stores[storePicker.selectedRow(inComponent: 0)]
         ad.saveContext()
         _ = navigationController?.popViewController(animated: true)
+    }
+    
+    func loadItemData() {
+        if let item = itemToEdit {
+            titleField.text = item.title
+            priceField.text = "\(item.price)"
+            detailsFIled.text = item.details
+            
+            if let store = item.toStore {
+                var index = 0
+                repeat {
+                    let s = stores[index]
+                    if s.name == store.name {
+                        storePicker.selectRow(index, inComponent: 0, animated: false)
+                        break
+                    }
+                    index += 1
+                }
+                    while (index < stores.count)
+            }
+        }
     }
     
     

@@ -44,6 +44,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         cell.configureCell(item: item)
     }
     
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         if let sections = controller.sections {
         return sections.count
