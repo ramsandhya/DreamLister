@@ -157,7 +157,9 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bF-HO-rCX">
-                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="addImage:" destination="P9X-w1-Ht5" eventType="touchUpInside" id="IQa-gc-zdi"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sge-CB-4vX" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.83137254900000002" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -251,6 +253,7 @@
                         <outlet property="detailsFIled" destination="qsf-tH-YI6" id="ma1-GP-VkR"/>
                         <outlet property="priceField" destination="60D-oM-p45" id="1Sk-sU-Ggc"/>
                         <outlet property="storePicker" destination="LSZ-aI-Ua5" id="4Wj-M9-zPD"/>
+                        <outlet property="thumbImg" destination="Dkv-mN-9U2" id="6p7-l2-Ujk"/>
                         <outlet property="titleField" destination="sge-CB-4vX" id="316-ZF-AWE"/>
                     </connections>
                 </viewController>
