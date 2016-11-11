@@ -242,6 +242,9 @@
                     <navigationItem key="navigationItem" title="Add/Edit" id="wCk-gq-4II">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="8q2-d8-Yav">
                             <color key="tintColor" red="1" green="0.36763019969999999" blue="0.4427889606" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="P9X-w1-Ht5" id="Arj-Ld-38Q"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -283,6 +286,6 @@
         <image name="tesla" width="800" height="489"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kpb-Of-5tg"/>
+        <segue reference="LWQ-yF-N3R"/>
     </inferredMetricsTieBreakers>
 </document>
