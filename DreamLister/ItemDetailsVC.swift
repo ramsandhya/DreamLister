@@ -131,6 +131,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
             context.delete(itemToEdit)
             ad.saveContext()
         }
+        _ = navigationController?.popViewController(animated: true)
     }
     
     
