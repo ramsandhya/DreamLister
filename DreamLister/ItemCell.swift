@@ -21,7 +21,8 @@ class ItemCell: UITableViewCell {
     func configureCell(item: Item) {
         title.text = item.title
         price.text = "$\(item.price)"
-        details.text = item.details 
+        details.text = item.details
+        thumb.image = item.toImage?.image as? UIImage
     }
      
     override func awakeFromNib() {

@@ -150,7 +150,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="Dkv-mN-9U2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="Dkv-mN-9U2">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Jsa-dB-7Eu"/>
                                     <constraint firstAttribute="width" constant="100" id="b1n-4e-8EG"/>
@@ -286,7 +286,7 @@
     </scenes>
     <resources>
         <image name="imagePick" width="150" height="150"/>
-        <image name="tesla" width="800" height="489"/>
+        <image name="tesla" width="400" height="244"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="LWQ-yF-N3R"/>

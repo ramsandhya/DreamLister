@@ -86,12 +86,18 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     }
     
     @IBAction func savePressed(_ sender: UIButton) {
+        
         var item: Item!
+        let picture = Image(context: context)
+        picture.image = thumbImg.image
+        
         if itemToEdit == nil {
             item = Item(context: context)
         } else {
             item = itemToEdit
         }
+        
+        item.toImage = picture
         
         if let title = titleField.text {
             item.title = title
@@ -115,6 +121,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
             titleField.text = item.title
             priceField.text = "\(item.price)"
             detailsFIled.text = item.details
+            thumbImg.image = item.toImage?.image as? UIImage
             
             if let store = item.toStore {
                 var index = 0
@@ -149,7 +156,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
             thumbImg.image = img
         }
         imagePicker.dismiss(animated: true, completion: nil
-        )
+         )
     }
     
     
